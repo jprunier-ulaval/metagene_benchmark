@@ -18,7 +18,6 @@ output1 = paste0(args[1],"_", args[2], "cores.RData")
 output2 = paste0(args[1],"_",args[2],"cores.tiff")
 
 listbam = as.character(design$File[design$Experiment > 0])
-#Don't forget to index bam files!!
 
 
 mg <- metagene$new(regions = reg, bam_files = listbam, assay = 'chipseq', cores = as.integer(args[2]),
